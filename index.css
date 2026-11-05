@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF8F5;
+    color: #241A14;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom wooden & warm amber accents */
+:root {
+  --wood-950: #1B130E;
+  --wood-900: #291C14;
+  --wood-800: #3E291C;
+  --wood-700: #5C3E29;
+  --wood-600: #825638;
+  --wood-500: #AA7248;
+  --wood-200: #E7D8C9;
+  --wood-100: #F3ECE2;
+  --wood-50: #FAF8F5;
+  --brass-500: #B8860B;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

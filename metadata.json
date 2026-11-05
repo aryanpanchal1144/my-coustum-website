@@ -1,0 +1,6 @@
+{
+  "name": "Shree Ganeshnath Furniture Works",
+  "description": "Artisanal handcrafted solid wooden furniture, bespoke carpentry commissions, and direct customer purchase requests by sole proprietor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
